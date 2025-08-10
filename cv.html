@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Resume</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Cairo', sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f0f0f0;
+      direction: ltr;
+      color: #333;
+    }
+
+    .cv-container {
+      max-width: 900px;
+      margin: auto;
+      display: flex;
+      background-color: white;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .sidebar {
+      background-color: #8B3D30;
+      color: white;
+      width: 280px;
+      padding: 30px 20px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .sidebar img {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      border: 3px solid #fff;
+      margin-bottom: 15px;
+      object-fit: cover;
+    }
+
+    .sidebar h2 {
+      margin: 0 0 8px;
+      font-size: 22px;
+      font-weight: 700;
+    }
+
+    .sidebar p.job-title {
+      margin: 0 0 20px;
+      font-size: 16px;
+      font-weight: 500;
+      opacity: 0.8;
+    }
+
+    .sidebar .contact-info {
+      text-align: left;
+      width: 100%;
+      font-size: 14px;
+    }
+
+    .sidebar .contact-info div {
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      justify-content: flex-start;
+      direction: ltr;
+    }
+
+    .sidebar .contact-info a {
+      color: white;
+      text-decoration: none;
+      word-break: break-all;
+    }
+
+    .sidebar .section-title {
+      margin-top: 30px;
+      border-top: 1px solid rgba(255,255,255,0.3);
+      padding-top: 15px;
+      font-weight: 600;
+      font-size: 18px;
+      text-align: center;
+    }
+
+    /* main content */
+    .main-content {
+      flex-grow: 1;
+      padding: 30px 40px;
+    }
+
+    .main-content h3 {
+      margin-top: 0;
+      border-bottom: 2px solid #8B3D30;
+      padding-bottom: 6px;
+      font-size: 22px;
+      color: #8B3D30;
+    }
+
+    .section {
+      margin-bottom: 25px;
+    }
+
+    .section p, .section ul {
+      font-size: 15px;
+      line-height: 1.6;
+    }
+
+    .section ul {
+      padding-left: 20px;
+    }
+
+    .section ul li {
+      margin-bottom: 10px;
+    }
+
+    .job-title {
+      font-weight: 700;
+      color: #8B3D30;
+      margin-bottom: 3px;
+    }
+
+    .date {
+      font-style: italic;
+      font-size: 14px;
+      color: #777;
+      margin-bottom: 8px;
+    }
+
+    a {
+      color: #8B3D30;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Skills list */
+    .skills-list {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+
+    .stars {
+      color: gold;
+      font-size: 18px;
+    }
+
+    /* responsive for phones */
+    @media (max-width: 700px) {
+      .cv-container {
+        flex-direction: column;
+      }
+      .sidebar {
+        width: 100%;
+        padding: 20px;
+      }
+      .main-content {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="cv-container">
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <img src="photo.jpg" alt="Raid Bouherour profile photo" />
+      <h2>Raid Bouherour</h2>
+      <p class="job-title">Geology Petroleum Student</p>
+
+      <div class="contact-info">
+        <div>📧 <a href="mailto:raidbhr2@gmail.com">raidbhr2@gmail.com</a></div>
+        <div>📞 <a href="tel:+213772285695">0772285695</a></div>
+        <div>🏠 Mila, Algeria</div>
+        <div>🔗 <a href="https://www.linkedin.com/in/raid-bhr-1466ab344" target="_blank">linkedin.com/in/raid-bhr-1466ab344</a></div>
+      </div>
+    </div>
+
+    <!-- Main content -->
+    <div class="main-content">
+      <div class="section">
+        <h3>Career Objective</h3>
+        <p>
+          I love working on the internet and also enjoy working in petroleum companies.  
+          I study hydrocarbons and my goal is to work at Sonatrach even as a volunteer.  
+          I strive for innovation, service, and competition on a global level.
+        </p>
+      </div>
+
+      <div class="section">
+        <h3>Skills</h3>
+        <ul class="skills-list">
+          <li>Website Programming</li>
+          <li>Video Editing</li>
+          <li>E-commerce Learning</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h3>Languages</h3>
+        <ul>
+          <li>Arabic <span class="stars">★★★★☆</span></li>
+          <li>English <span class="stars">★★★☆☆</span></li>
+          <li>French <span class="stars">★☆☆☆☆</span></li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h3>Education</h3>
+        <ul>
+          <li>
+            <span class="job-title">Bachelor’s Degree in Geology Petroleum</span> <br />
+            <span class="date">University of Boumerdes</span><br />
+            Currently a petroleum geology student.
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
