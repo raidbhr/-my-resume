@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>More About Me</title>
+  <style>
+    body {
+      font-family: 'Cairo', sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 30px;
+      text-align: center;
+      color: #333;
+    }
+    h1 {
+      color: #8B3D30;
+    }
+    .pdf-container {
+      margin: 30px auto;
+      max-width: 800px;
+      height: 600px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      background: white;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+    .btn {
+      display: inline-block;
+      margin: 15px 10px;
+      padding: 12px 25px;
+      background-color: #8B3D30;
+      color: white;
+      font-weight: 700;
+      border-radius: 6px;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .btn:hover {
+      background-color: #5a271d;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>My EF SET Certificate</h1>
+
+  <div class="pdf-container">
+    <iframe src="EF_SET_Certificate.pdf"></iframe>
+  </div>
+
+  <a href="EF_SET_Certificate.pdf" class="btn" target="_blank" download>Download PDF</a>
+  <a href="index.html" class="btn">Back to Resume</a>
+
+</body>
+</html>
